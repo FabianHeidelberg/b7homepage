@@ -251,7 +251,7 @@ h1, h2 {
     color: #7ca403;
 }
 .banner {
-    background: #000000 url("images/B7_Banner.png") no-repeat scroll center bottom;
+    background: #000000 url("images/B7_Banner.svg") no-repeat scroll center bottom;
     background-size: 100%;
     background-position: center;
     border-top: 5px solid #7ca403;
