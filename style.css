@@ -23,6 +23,7 @@ body {
     font-size: 0.75em;
     font-weight: normal;
     margin: 0 auto;
+    counter-reset: regNum;
 }
 article {
     width: 100%;
@@ -153,8 +154,8 @@ main {
     .regtable {
         width:100%;
         border:1px solid #C0C0C0;
-        border-collapse:collapse;
         padding:5px;
+        border-collapse: collapse;
     }
     .regtable th {
         border:1px solid #C0C0C0;
@@ -166,6 +167,37 @@ main {
         text-align:center;
         padding:5px;
     }
+
+.regtable tr td:first-child:before {
+    counter-increment: regNum;
+    content: counter(regNum);
+}
+
+
+.suctable {
+    width:100%;
+    border:1px solid #C0C0C0;
+    padding:5px;
+    border-collapse: collapse;
+}
+.suctable th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+}
+.suctable td {
+    border:1px solid #C0C0C0;
+    text-align:center;
+    padding:5px;
+}
+
+.suctable tr td:first-child:before {
+    counter-increment: regNum;
+    content: counter(regNum);
+}
+
+
+
 .smallteaser p {
     border-top: 1px solid #d1d1d1;
 }
@@ -273,3 +305,4 @@ h1, h2 {
 		background-color: transparent; 
 		border: 1px solid yellow;
 }
+
