@@ -1,0 +1,45 @@
+p            {
+              font-family:Caslon Antique;
+              font-size:10pt;
+             }
+
+
+td           {
+              font-family:Caslon Antique ;
+              font-size:10pt;
+             }
+
+td.header    {
+              font-family:Caslon Antique ;
+              font-size:10pt;
+              color:white;
+             }
+
+h1           {
+              font-family:Caslon Antique;
+              font-size:20pt;
+              text-align:center;
+             }
+h2           {
+              font-family:Caslon Antique;
+              font-size:14pt;
+              font-style:italic;
+              text-align:center;
+             }
+
+tr.header    {
+              background-color:gray;
+             }
+
+tr.row1      {
+              background-color:#DDDDDD;
+             }
+
+tr.row0      {
+              background-color:#FFFFFF;
+             }
+
+table.main   {
+              width:650;
+              align:center;
+             }
