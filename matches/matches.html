@@ -1,0 +1,928 @@
+<html>
+<script>
+    function openTable(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    } 
+</script>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/gif" href="images/favicon.gif">
+    <meta charset="utf-8">
+    <meta name="describtion" content="The B7-Tournament Homepage">
+    <meta name="author" content="Fabian Heidelberg">
+    <meta name="keywords" content="BloodBowl, Tournament, Auryn">
+    <title>B7-Tournament</title>
+</head>
+
+
+<header class="banner">
+    <ul class='menu_top clearfix'>
+        <li><a href="../index.html">Home</a>
+        </li>
+        <li><a href="../location/location.html">Location</a>
+        </li>
+        <li><a href="../rules/rules.html">Rules</a>
+        </li>
+        <li><a href="../schedule/schedule.html">Schedule</a>
+        </li>
+        <li><a href="../registration/registration.html">Registration</a>
+        </li>
+        <li><a href="../halloffame/halloffame.html">Hall of Fame</a>
+        </li>
+        <li><a id="active" href="matches.html">Matches</a>
+        </li>
+    </ul>
+    <h1>
+        <a "id=boxlink" href="index.html"></a>
+    </h1>
+
+
+</header>
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTable(event, 'Parings')">Parings</button>
+    <button class="tablinks" onclick="openTable(event, 'Results')">Results</button>
+</div>
+
+<!-- Tab content -->
+<div id="Parings" class="tabcontent">
+    <head>
+        <title>B7_2019 - Draw for round 3</title>
+        <link rel='stylesheet' type='text/css' href='do.css'>
+    </head>
+    
+    <body>
+        <table class=main align=center>
+            <td>
+                <img src='trophy_bb1.gif' align=left>
+                <img src='trophy_bb1.gif' align=right>
+                <h1>B7_2019</h1>
+                <h2>Draw for round 3</h2>
+                <table cellspacing=0 cellpadding=0 align=center>
+                    <tr class=header>
+                        <td align=center class=header><strong>Table</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center colspan=3 class=header><strong>Match</strong></td>
+                    </tr>
+                    <tr align=center class=row0>
+                        <td rowspan=2>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Warpstone Wanderers </strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Naughtys</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Skaven | SilverDarwin </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Undead | Le_Troll</td>
+                    </tr>
+                    <tr align=center class=row1>
+                        <td rowspan=2>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Autum Leaves</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Handor Thoron</strong></td>
+                    </tr>
+                    <tr class=row1>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Wood Elf | copper </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Wood Elf | Tauriel</td>
+                    </tr>
+                    <tr align=center class=row0>
+                        <td rowspan=2>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Cordula Gruen</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>2nd AirBorne</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Orc | Narok </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Wood Elf | Banelord</td>
+                    </tr>
+                    <tr align=center class=row1>
+                        <td rowspan=2>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Eichborndamm Eagles</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Treecuddlers United</strong></td>
+                    </tr>
+                    <tr class=row1>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Wood Elf | pedda </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Wood Elf | Green_Velvet</td>
+                    </tr>
+                    <tr align=center class=row0>
+                        <td rowspan=2>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Miami Mice</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Harzzzzwald Tempelwachen</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Skaven | Heroic_Tackle </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Lizardman | Jurisch</td>
+                    </tr>
+                    <tr align=center class=row1>
+                        <td rowspan=2>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Hanauer Hassadeure</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Reduit Rot-Weiss</strong></td>
+                    </tr>
+                    <tr class=row1>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Human | Bembel </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Orc | Phifoe</td>
+                    </tr>
+                    <tr align=center class=row0>
+                        <td rowspan=2>7</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>The Loosers</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Falke 04</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Dwarf | yoxcoco </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Human | Tamanto</td>
+                    </tr>
+                    <tr align=center class=row1>
+                        <td rowspan=2>8</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>Big Fat Boys</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>The Horgenhold Hungry's </strong></td>
+                    </tr>
+                    <tr class=row1>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Ogre | ragme </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Halfling | Striden</td>
+                    </tr>
+                    <tr align=center class=row0>
+                        <td rowspan=2>9</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right><strong>La Mure</strong></td>
+                        <td align=center> &nbsp; vs &nbsp; </td>
+                        <td align=left><strong>Mur bloque</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=right>Orc | Pockus </td>
+                        <td align=center>&nbsp;</td>
+                        <td align=left>Norse | Otis</td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+    
+    </body>
+
+</div>
+
+<div id="Results" class="tabcontent">
+    <head>
+        <title>B7_2019 - Results after round 2</title>
+        <link rel='stylesheet' type='text/css' href='do.css'>
+    </head>
+    
+    <body>
+        <table class=main align=center>
+            <td>
+                <img src='trophy_bb1.gif' align=left>
+                <img src='trophy_bb1.gif' align=right>
+                <h1>B7_2019</h1>
+                <h2>Results after round 2</h2>
+                <table cellspacing=0 cellpadding=0 align=center>
+                    <tr class=header>
+                        <td align=right class=header><strong>#</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td class=header><strong>Team</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td class=header><strong>Race</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td class=header><strong>Coach</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center class=header><strong>Score</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center colspan=3 class=header><strong>Touchdowns</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center colspan=3 class=header><strong>Casualties</strong></td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center class=header><strong>Paint</strong></td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Warpstone Wanderers </td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Skaven</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>SilverDarwin</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>8</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>7</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Naughtys</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Undead</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Le_Troll</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>8</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>5</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Autum Leaves</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Wood Elf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>copper</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>8</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Handor Thoron</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Wood Elf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Tauriel</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                        <td align=center>-</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Cordula Gruen</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Orc</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Narok</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Eichborndamm Eagles</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Wood Elf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>pedda</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>7</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>2nd AirBorne</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Wood Elf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Banelord</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>1</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>8</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Treecuddlers United</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Wood Elf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Green_Velvet</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>9</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Miami Mice</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Skaven</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Heroic_Tackle</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>7</td>
+                        <td align=center>-</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>10</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Harzzzzwald Tempelwachen</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Lizardman</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Jurisch</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>11</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Hanauer Hassadeure</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Human</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Bembel</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>12</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Reduit Rot-Weiss</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Orc</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Phifoe</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>1</td>
+                        <td align=center>-</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>13</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>The Loosers</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Dwarf</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>yoxcoco</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>1</td>
+                        <td align=center>-</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td align=center>-</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>14</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Falke 04</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Human</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Tamanto</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>9</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>15</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Big Fat Boys</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Ogre</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>ragme</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>1</td>
+                        <td align=center>-</td>
+                        <td align=center>4</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>6</td>
+                        <td align=center>-</td>
+                        <td align=center>3</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>16</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>The Horgenhold Hungry's </td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Halfling</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Striden</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>3</td>
+                        <td align=center>-</td>
+                        <td align=center>7</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row0>
+                        <td align=right>17</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>La Mure</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Orc</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Pockus</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>6</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>4</td>
+                        <td align=center>-</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                    <tr class=row1>
+                        <td align=right>18</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Mur bloque</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Norse</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td>Otis</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>1</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>2</td>
+                        <td align=center>-</td>
+                        <td align=center>5</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>7</td>
+                        <td align=center>-</td>
+                        <td align=center>2</td>
+                        <td width=3>&nbsp;</td>
+                        <td bgcolor=gray width=1>&nbsp;</td>
+                        <td width=3>&nbsp;</td>
+                        <td align=center>0</td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+    </body>
+
+</div>
