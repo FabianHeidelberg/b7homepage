@@ -1,193 +1,480 @@
-<html>
-
-	<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" type="image/gif" href="images/favicon.gif">
-		<meta charset="utf-8">
-		<meta name="describtion" content="The B7-Tournament Homepage">
-		<meta name="author" content="Fabian Heidelberg">
-		<meta name="keywords" content="BloodBowl, Tournament, Auryn, Stuttgart, B7">
-		<meta property="og:image" content="images/B7_Logo_WA.jpg">
-		<title>B7-Tournament</title>
-	</head>
 
 
-<header class="banner">
-	<ul class='menu_top clearfix'>
-		<li><a id="active" href="index.html">Home</a>
-		</li>
-		<li><a href="location/location.html">Location</a>
-		</li>
-		<li><a href="rules/rules.html">Rules</a>
-		</li>
-		<li><a href="schedule/schedule.html">Schedule</a>
-		</li>
-		<li><a href="registration/registration.html">Registration</a>
-		</li>
-		<li><a href="halloffame/halloffame.html">Hall of Fame</a>
-		</li>
-		<li><a href="../matches/matches.html">Matches</a>
-		</li>
-	</ul>
-	<h1>
-      <a "id=boxlink"  href="index.html"></a>
-    </h1> 
+
+
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | B7</title>
+    <meta name="description" content="Rules, results, and key tournament information for B7 in Boeblingen.">
+    <link rel="icon" href="./assets/img/favicon.gif" type="image/gif">
+    <link rel="alternate" href="./feed.xml" type="application/rss+xml" title="B7 Feed">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer src="./assets/js/theme-toggle.js"></script>
+  </head>
+  <body class="noise-overlay">
+    <div class="sr-only" aria-live="polite" aria-atomic="true" data-announcer></div>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <a class="brand-mark" href="./" aria-label="B7">
+            <picture><source type="image/avif" srcset="assets/img/B7_Banner-480.avif 480w, assets/img/B7_Banner-768.avif 768w, assets/img/B7_Banner-1200.avif 1200w" sizes="(min-width: 900px) 18rem, 13rem"><source type="image/webp" srcset="assets/img/B7_Banner-480.webp 480w, assets/img/B7_Banner-768.webp 768w, assets/img/B7_Banner-1200.webp 1200w" sizes="(min-width: 900px) 18rem, 13rem"><img src="assets/img/B7_Banner-1209.svg" alt="" class="site-logo" loading="lazy" decoding="async" width="1209" height="148"></picture>
+          </a>
+          <p class="brand-meta">
+            19th edition · Boeblingen, Germany
+          </p>
+        </div>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span class="theme-icon theme-icon-sun" data-theme-icon-sun aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+                <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                <path d="M12 2.5v2.4M12 19.1v2.4M21.5 12h-2.4M4.9 12H2.5M18.7 5.3l-1.7 1.7M7 17l-1.7 1.7M18.7 18.7 17 17M7 7 5.3 5.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              </svg>
+            </span>
+            <span class="theme-icon theme-icon-moon" data-theme-icon-moon aria-hidden="true" hidden>
+              <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+                <path d="M20.6 14.3A8.8 8.8 0 1 1 9.7 3.4a7 7 0 1 0 10.9 10.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <span class="sr-only" data-theme-label>Light</span>
+          </button>
+        </div>
+        <nav class="site-nav" id="site-nav" data-nav-panel aria-label="Primary navigation">
+          <ul>
+            
+              <li><a href="./" aria-current="page">
+
+  
+
+<span>
+  Home
+</span></a></li>
+            
+              <li><a href="./rules/" >
+
+  
+
+<span>
+  Rules
+</span></a></li>
+            
+              <li><a href="./schedule/" >
+
+  
+
+<span>
+  Schedule
+</span></a></li>
+            
+              <li><a href="./location/" >
+
+  
+
+<span>
+  Location
+</span></a></li>
+            
+              <li><a href="./registration/" >
+
+  
+
+<span>
+  Registration
+</span></a></li>
+            
+              <li><a href="./legacy/" >
+
+  
+
+<span>
+  Hall of Fame
+</span></a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        
+<section class="scoreboard">
+  <div class="scoreboard-copy">
     
 
-</header>
+  
 
-    <body>
-<main>
-	<div class="content">
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>Bad news everyone </h3>
-			</header>
-			<div style="color: red; font-size: 25; align-items: left;"><b>B7 is canceled</b></div>
-			<p> Due to the current situation with the corona pandemic and the according governmental regulations it is not possible 
-				for us to organize our tournament. We hope that we we can uphold our traditional tournament next year and looking 
-				forward into the future.  
-				Stay healthy and have good time!<br>
-				Fabian & Rainer
-			</p>
-		</section>
-	</div>
-			<div class="content">
-				<section>
-					<header> <img src="images/B7_Logo.svg" alt="">
-						<h2>NEWS!</h2>
-						<h3>Finally the 2020 UPDATE </h3>
-					</header>
-					<p> We finally got approval from fsfev to hold our beloved tournament at Auryn 2020! <br>
-						The B7 2020 will be hold from 11th-12th July 2020!<br>
-						You can register for the tournament from 01.01.2020 via E-Mail. For more information please check our <br>
-						<a href="registration/registration.html">registration-site</a>.
-						<br>
-						If you have questions, recommendations or even stuff you want to donate/sponser our tournament with prices,
-						drop us a
-						Mail.<br>
-						We are looking forward to all of you guys! Have nice holidays!<br>
-						Fabian & Rainer
-					</p>
-				</section>
-			</div>
-		<div class="content">
-			<section>
-				<header> <img src="images/B7_Logo.svg" alt="">
-					<h2>NEWS!</h2>
-					<h3>Finally the 2019 UPDATE </h3>
-				</header>
-				<p> We finally got approval from fsfev to hold our beloved tournament at Auryn 2019! <br>
-					The B7 2019 will be hold from 6th-7th July 2019!<br>
-					You can register for the tournament from 01.01.2019 via E-Mail. For more information please check our <br> <a href="registration/registration.html">registration-site</a>.
-					<br>
-					If you have questions, recommendations or even stuff you want to donate/sponser our tournament with prices, drop us a
-					Mail.<br>
-					We are looking forward to all of you guys! Have nice holidays!<br>
-					Fabian & Rainer
-				</p>
-			</section>
-		</div>
-	<div class="content">
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>Finally the 2018 UPDATE </h3> </header>
-			<p> We finally got approval from fsfev to hold our beloved tournament at Auryn 2018! <br>
-				The B7 2018 will be hold from 7th-8th July 2018!<br>
-				You can register for the tournament from 01.01.2018 via E-Mail. For more information please check our <br> <a href="registration/registration.html">registration-site</a>. <br>
-				If you have questions, recommendations or even stuff you want to donate/sponser our tournament with prices, drop us a Mail.<br>
-				We are looking forward to all of you guys! Have nice holidays!<br>
-				Fabian & Rainer
-			</p>
-		</section>
-	</div>
-	<div class="content">
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>Rules update! </h3> </header>
-			<p> With the latest gaming supplement from Games Workshop came out just a few days ago we decided to include that to the B7! <br>
-				So please be aware of ony changes and in case of upcoming questions do not hesitate to contact us! <br>
-				See you soon coaches!
-			</p>
-		</section>
-	</div>
-	<div class="content">
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>B7-Tournament <br> Date confirmed!</h3> </header>
-			<p>Hello Folks!
-			The date for 2017 tournament is:<br />
-			<bold>08.07.2017 - 09.07.2017</bold><br />
-			Registration starts as always at 01.01.2017 by writing an email to register@b7-tournament.de
-			<br>
-			If you want to see the rules for 2017 check out our Rules section! <br>
-			We are also glad to announce that we can offer as many participating seats as in the last years! Which means not also we are taking up to 70 people to register we also will play six rounds again!<br>
-			Furthermore the results of this year will appear soon on the webpage, sorry for that delay but we will be able to fix this ASAP.
-			</p>
-		</section>
-	</div>
-	<div class="content">
-	<section>
-		<header> <img src="images/B7_Logo.svg" alt="">
-			<h2>Announcement!</h2>
-			<h3>SBBM!</h3> </header>
-			<p>
-				<a target="_blank" href="http://www.sbbm-turniere.com"><img width="300px" src="http://www.sbbm-turniere.com/images/SBBM-klein.gif"></a>
-				<br>
-			We are proud to tell you we are part of the famous SBBM 2016! If you want to participate in the Süddeutsche Blood Bowl Meisterschaft, all you have to do is to play at least three tournaments which are part of the SBBM and with at least two different teams. For more information click on the logo and you will be forwarded to their page. <br>
-				Have fun and see you soon!
-			</p>
-	</section>
-	</div>
-	<div class="content">
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>B7-Tournament 2016!<br>Date confirmed!</h3> </header>
-			<p>
-			Hello Folks!
-			The date for 2016 tournament is:<br />
-			<bold>09.07.2016 - 10.7.2016</bold><br />
-			Registration starts as always at 01.01.2016 by writing an email to register@b7-tournament.de
-			<br>
-			If you want to see the rules for 2016 check out our Rules section!
-			</p>
-		</section>
-		
-		<section>
-			<header> <img src="images/B7_Logo.svg" alt="">
-				<h2>NEWS!</h2>
-				<h3>B7-Tournament is live!<br>Future updates here!</h3> </header>
-			<p>Bald findet Ihr hier alles Wissenswerte um das B7-Turnier in Böblingen. Bis 2015 haben Frank und Bärbel das Turnier ausgerichtet und einen fantastischen Job dabei gemacht.<br/>
- Da die beiden nun beschlossen haben das B7 nicht mehr zu leiten sind Wir (Rainer und Fabian) eingesprungen und haben die Leitung ab dem Jahr 2016.<br/>
- Wir versuchen dem hohem Standard den Frank und Bärbel die letzten Jahre vorgelegt haben gerecht zu werden. Es wird mit Sicherheit ein paar Änderungen geben, von denen wir hoffen dass Sie euch gefallen. Alles weitere wird bald hier bekannt gegeben. Bis der B7 dieses Jahr rum ist wird das die einzige Information sein die wir euch geben können.<br/> Falls Ihr Fragen zum B7 2015 habt besucht bitte Franks Seite: <a href="http://www.b7.beckerf.de"  target="_blank">b7.beckerf.de</a></p>
-		</section>
-	</div>
-	<div class="bigteaser clearfix">
-		<section> <img src="images/B7_Logo.svg" alt="">
-			<h2>Registration</h2>
-			<p> If you want more information about how to register or the current registration status, click the button.
-				<br> <a href="registration/registration.html">Registration</a> </p>
-		</section>
-		<section> <img src="images/B7_Logo.svg" alt="">
-			<h2>Location</h2>
-			<p> You don't know how to get to the tournament? No problem just click on the button!
-				<br> <a href="location/location.html">Location</a> </p>
-		</section>
-	</div>
-</main>
-<footer>
-	<div class='kontakt'> 
-		<br /> Email: <a href="mailto:info@b7-tournament.de">info@b7-tournament.de</a>
-		<br />
+<p class="eyebrow">
+  Blood Bowl weekend
+</p>
+    <h1>
 
-	<a href="impressum/impressum.html">Imprint</a></div>
+  
 
-</footer>
-</body>
+<span>
+  B7 Tournament
+</span></h1>
+    
+
+  
+
+<p class="lede">
+  Everything you need for B7 2020: rules, schedule, travel, pairings, and the Hall of Fame in one compact bilingual tournament site.
+</p>
+    <div class="scoreboard-grid">
+      <article>
+        
+
+  
+
+<span>
+  Edition
+</span>
+        <strong>
+
+  
+
+<span>
+  19th edition
+</span></strong>
+      </article>
+      <article>
+        
+
+  
+
+<span>
+  Venue
+</span>
+        <strong>
+
+  
+
+<span>
+  Auryn Boeblingen
+</span></strong>
+      </article>
+      <article>
+        
+
+  
+
+<span>
+  City
+</span>
+        <strong>
+
+  
+
+<span>
+  Boeblingen, Germany
+</span></strong>
+      </article>
+      <article>
+        
+
+  
+
+<span>
+  Cap
+</span>
+        <strong>
+
+  
+
+<span>
+  Max. 16 coaches
+</span></strong>
+      </article>
+    </div>
+    <div class="button-row">
+      <a class="button button-accent" href="./rules/">
+
+  
+
+<span>
+  Rules pack
+</span></a>
+    </div>
+  </div>
+  <div class="scoreboard-media">
+    <picture><source type="image/avif" srcset="assets/img/B7_Banner-480.avif 480w, assets/img/B7_Banner-768.avif 768w, assets/img/B7_Banner-1200.avif 1200w" sizes="(min-width: 900px) 28rem, 70vw"><source type="image/webp" srcset="assets/img/B7_Banner-480.webp 480w, assets/img/B7_Banner-768.webp 768w, assets/img/B7_Banner-1200.webp 1200w" sizes="(min-width: 900px) 28rem, 70vw"><img src="assets/img/B7_Banner-1209.svg" alt="B7 tournament banner" class="hero-image hero-banner" loading="lazy" decoding="async" width="1209" height="148"></picture>
+  </div>
+</section>
+
+<section id="news-section" class="section-header news-spotlight-head">
+  <div>
+    
+
+  
+
+<p class="eyebrow">
+  Latest News
+</p>
+    
+
+  
+
+<h2>
+  Current tournament updates and announcements
+</h2>
+  </div>
+  <a href="./feed.xml">
+
+  
+
+<span>
+  RSS
+</span></a>
+</section>
+
+<section class="news-list news-spotlight-list">
+  
+    
+      <article class="news-card">
+        <p class="news-date">
+          Jul 24, 2020
+        </p>
+        <h3><a href="./news/bye-bye-b7/">
+
+<span>
+  Bye bye b7
+</span></a></h3>
+        <p>
+
+<span>
+  On July 24, 2020, the B7 site signed off with a short farewell.
+</span></p>
+      </article>
+    
+      <article class="news-card">
+        <p class="news-date">
+          Mar 15, 2020
+        </p>
+        <h3><a href="./news/covid-19/">
+
+<span>
+  COVID-19
+</span></a></h3>
+        <p>
+
+<span>
+  On March 15, 2020, all active tournaments were put on hold during the pandemic.
+</span></p>
+      </article>
+    
+      <article class="news-card">
+        <p class="news-date">
+          Feb 22, 2020
+        </p>
+        <h3><a href="./news/archive-overview/">
+
+<span>
+  B7 2020 overview
+</span></a></h3>
+        <p>
+
+<span>
+  Rules, registration, schedule, location, matches, and the Hall of Fame form the core sections of the tournament site.
+</span></p>
+      </article>
+    
+  
+</section>
+
+<section class="panel-grid">
+  
+    <article class="panel">
+      <p class="eyebrow">
+
+  
+
+<span>
+  Format
+</span></p>
+      <h2>
+
+  
+
+<span>
+  6 games, TV 600, Swiss
+</span></h2>
+      <p>
+
+  
+
+<span>
+  The rules pack lists five games, TV 600, Swiss pairings, and a hard cap of forty coaches.
+</span></p>
+    </article>
+  
+    <article class="panel">
+      <p class="eyebrow">
+
+  
+
+<span>
+  Venue
+</span></p>
+      <h2>
+
+  
+
+<span>
+  Boeblingen over spectacle
+</span></h2>
+      <p>
+
+  
+
+<span>
+  Clear surfaces, strong navigation, and direct tournament info keep the site fast and easy to read.
+</span></p>
+    </article>
+  
+    <article class="panel">
+      <p class="eyebrow">
+
+  
+
+<span>
+  Info
+</span></p>
+      <h2>
+
+  
+
+<span>
+  Rules, pairings, Hall of Fame
+</span></h2>
+      <p>
+
+  
+
+<span>
+  All important tournament sections are gathered in one place: rules, travel, pairings, and the Hall of Fame.
+</span></p>
+    </article>
+  
+</section>
+
+<section class="section-header">
+  <div>
+    
+
+  
+
+<p class="eyebrow">
+  Fast links
+</p>
+    
+
+  
+
+<h2>
+  The remaining sections from b7-tournament.de
+</h2>
+  </div>
+</section>
+
+<section class="link-grid">
+  <a class="link-card" href="./registration/"><span>
+
+  
+
+<span>
+  Registration
+</span></span><strong>
+
+  
+
+<span>
+  Excerpt from the coach list
+</span></strong></a>
+  <a class="link-card" href="./schedule/"><span>
+
+  
+
+<span>
+  Schedule
+</span></span><strong>
+
+  
+
+<span>
+  Saturday and Sunday in the original structure
+</span></strong></a>
+  <a class="link-card" href="./location/"><span>
+
+  
+
+<span>
+  Location
+</span></span><strong>
+
+  
+
+<span>
+  Airport, hotels, and BBG
+</span></strong></a>
+  <a class="link-card" href="./rules/"><span>
+
+  
+
+<span>
+  Rules
+</span></span><strong>
+
+  
+
+<span>
+  TV 1150, Swiss, 3rd Edition
+</span></strong></a>
+  <a class="link-card" href="./legacy/"><span>
+
+  
+
+<span>
+  Hall of Fame
+</span></span><strong>
+
+  
+
+<span>
+  Champions and awards since 2001
+</span></strong></a>
+</section>
+
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p class="footer-title">
+
+  
+
+<span>
+  B7 Tournament
+</span></p>
+          <p>
+            Auryn Boeblingen, Boeblingen, Germany
+          </p>
+        </div>
+        <div>
+          
+
+<p>
+  Rules, pairings, Hall of Fame, and tournament news at a glance.
+</p>
+          <a href="./feed.xml">
+
+<span>
+  RSS Feed
+</span></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
-
