@@ -876,31 +876,6 @@ h3 {
   padding-top: 1rem;
 }
 
-.schedule-tabs {
-  display: flex;
-  align-items: flex-end;
-  gap: 0;
-  border-bottom: 1px solid var(--color-border);
-  margin-bottom: 0.4rem;
-}
-
-.schedule-tab {
-  border: 0;
-  border-bottom: 2px solid transparent;
-  background: transparent;
-  color: color-mix(in hsl, var(--color-text) 62%, var(--color-bg) 38%);
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  padding: 0.45rem 0.8rem;
-}
-
-.schedule-tab.is-active {
-  color: var(--color-accent);
-  border-bottom-color: var(--color-accent);
-}
-
 .schedule-list-clean {
   gap: 0;
   border-top: 1px solid var(--color-border);
@@ -1281,5 +1256,69 @@ h3 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Readability pass: left-align text content sitewide */
+body {
+  text-align: left;
+}
+
+.scoreboard-copy {
+  justify-items: start;
+  text-align: left;
+}
+
+.section-header {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.button-row {
+  justify-content: flex-start;
+}
+
+.site-nav a {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.event-metric {
+  text-align: left;
+}
+
+.schedule-item,
+.schedule-body {
+  justify-items: start;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .brand-meta,
+  .panel,
+  .news-card,
+  .link-card,
+  .table-panel,
+  .page-hero,
+  .post-hero,
+  .post-body,
+  .section-header,
+  .schedule-item,
+  .schedule-body,
+  .site-nav a {
+    text-align: left;
+  }
+
+  .section-header {
+    align-items: flex-start;
+  }
+
+  .site-nav a {
+    justify-content: flex-start;
+  }
+
+  .schedule-item,
+  .schedule-body {
+    justify-items: start;
   }
 }
