@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light dark;
+  --archive-bg: #f5f7fb;
+  --archive-surface: #ffffff;
+  --archive-text: #111827;
+  --archive-muted: #475569;
+  --archive-border: #cbd5e1;
+  --archive-border-strong: #64748b;
+  --archive-header-bg: #0f172a;
+  --archive-header-text: #f8fafc;
+  --archive-row-alt: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --archive-bg: #020617;
+    --archive-surface: #0f172a;
+    --archive-text: #e2e8f0;
+    --archive-muted: #94a3b8;
+    --archive-border: #334155;
+    --archive-border-strong: #64748b;
+    --archive-header-bg: #1e293b;
+    --archive-header-text: #f8fafc;
+    --archive-row-alt: #172033;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: var(--archive-bg);
+  color: var(--archive-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.main {
+  width: min(100%, 78rem);
+  margin: 0 auto;
+  background: var(--archive-surface);
+  border: 1px solid var(--archive-border);
+  box-shadow: 0 0.75rem 2rem rgb(15 23 42 / 0.12);
+}
+
+table.main > tbody > tr > td,
+table.main > tr > td {
+  display: block;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 0.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+h2 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  color: var(--archive-muted);
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 700;
+}
+
+img[align="left"] {
+  float: left;
+}
+
+img[align="right"] {
+  float: right;
+}
+
+table[align="center"] {
+  width: 100%;
+  table-layout: auto;
+}
+
+td,
+th {
+  padding: 0.35rem 0.45rem;
+  border-bottom: 1px solid var(--archive-border);
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+.header td,
+td.header {
+  background: var(--archive-header-bg);
+  color: var(--archive-header-text);
+  border-bottom-color: var(--archive-border-strong);
+  font-weight: 700;
+}
+
+.row0 td,
+.row1 td {
+  background: var(--archive-surface);
+}
+
+.row1 td {
+  background: var(--archive-row-alt);
+}
+
+td[bgcolor="gray"] {
+  width: 1px;
+  min-width: 1px;
+  padding: 0;
+  background: var(--archive-border-strong);
+  border-bottom-color: var(--archive-border-strong);
+}
+
+strong {
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  table.main > tbody > tr > td,
+  table.main > tr > td {
+    padding: 0.75rem;
+  }
+
+  td,
+  th {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  img[align="left"],
+  img[align="right"] {
+    width: 2.75rem;
+    height: auto;
+  }
+}
