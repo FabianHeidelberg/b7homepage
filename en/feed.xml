@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
+    
     <title>B7 Tournament</title>
-    <link>https://b7-tournament.de/</link>
+    <link>https://b7-tournament.de/en/</link>
     <description>B7 tournament site with all key information for the 19th edition 2026 in Boeblingen.</description>
     <language>en</language>
     <lastBuildDate>Thu, 19 Mar 2026 00:00:00 GMT</lastBuildDate>
     
     <item>
-      <title>BLOOD, GLORY &amp;amp; A RETURN TO THE PITCH – B7 IS BACK!</title>
-      <link>https://b7-tournament.de/news/b7-is-back/</link>
-      <guid>https://b7-tournament.de/news/b7-is-back/</guid>
+      <title>BLOOD, GLORY &amp; A RETURN TO THE PITCH – B7 IS BACK!</title>
+      <link>https://b7-tournament.de/en/news/b7-is-back/</link>
+      <guid>https://b7-tournament.de/en/news/b7-is-back/</guid>
       <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
       <description>B7 returns at Auryn Con in Boeblingen with a first-ever Sevens format, starting with 16 coach slots.</description>
     </item>

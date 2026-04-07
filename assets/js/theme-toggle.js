@@ -7,13 +7,13 @@ const moonIcon = document.querySelector("[data-theme-icon-moon]");
 const announcer = document.querySelector("[data-announcer]");
 
 const themeLabels = {
-  dark: "Dark",
-  light: "Light",
-  aria: "Toggle color theme",
-  toggleToDark: "Activate dark theme",
-  toggleToLight: "Activate light theme",
-  activeDark: "Dark theme active",
-  activeLight: "Light theme active",
+  dark: themeLabel?.dataset.labelDark || "Dark",
+  light: themeLabel?.dataset.labelLight || "Light",
+  aria: themeLabel?.dataset.labelAria || "Toggle color theme",
+  toggleToDark: themeLabel?.dataset.labelToDark || "Activate dark theme",
+  toggleToLight: themeLabel?.dataset.labelToLight || "Activate light theme",
+  activeDark: themeLabel?.dataset.labelActiveDark || "Dark theme active",
+  activeLight: themeLabel?.dataset.labelActiveLight || "Light theme active",
 };
 
 function syncThemeLabel(theme) {
